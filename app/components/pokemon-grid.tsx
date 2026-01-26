@@ -54,6 +54,7 @@ export default function PokemonGrid({ search }: any) {
             <div className="flex flex-wrap justify-center gap-6">
 
                 {dataAny?.filter((pokemon: PokemonType) => {
+                    /* Vazio? Retorna todos pokémon; não-vazio retorna somente pokémon relevantes */
                     return searchAny === '' ?
                         (arrayLength = lastPokemon, lastPokemon = dataAny[dataAny.length - 1].id)
                         : pokemon.name.toLowerCase().includes(searchAny) ? pokemon

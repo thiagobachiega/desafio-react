@@ -14,6 +14,7 @@ export default function Form({ pokemon }: PokemonCardProps) {
 
     let mode: string
 
+    /* Form será usado para criar e editar */
     pokemon.name == '' ? mode = 'create' : mode = 'edit'
 
     const [post, setPost] = useState({

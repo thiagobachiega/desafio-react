@@ -11,6 +11,6 @@ export async function handleDelete({ pokemon }: PokemonCardProps) {
             router.push(`../..`)
 
         } catch (error) {
-            console.log(error.message)
+            error instanceof Error ? console.log(error.message) : ''
         }
     }

@@ -21,7 +21,7 @@ export function handleCreate(event: { preventDefault: () => void; }, post: any) 
             router.push(`../../..`)
 
         } catch (error) {
-            console.log(error.message)
+            error instanceof Error ? console.log(error.message) : ''
         }
     }
 }

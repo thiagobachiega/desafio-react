@@ -1,10 +1,9 @@
 'use client'
 
 import Image from "next/image";
-import PokemonGrid, { lastPokemon, pokemonCount } from "./components/pokemon-grid";
+import PokemonGrid, { lastPokemon } from "./components/pokemon-grid";
 import { useState } from "react";
 import { router } from "./layout";
-
 
 
 export default function Page() {

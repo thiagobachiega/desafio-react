@@ -37,7 +37,7 @@ export function handleEdit(event: { preventDefault: () => void; }, { pokemon }: 
         router.push(`../../..`)
 
     } catch (error) {
-        console.log(error.message)
+        error instanceof Error ? console.log(error.message) : ''
     }
 
 }
